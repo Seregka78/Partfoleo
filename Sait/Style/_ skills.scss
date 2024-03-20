@@ -1,0 +1,57 @@
+.cards__star{
+    width: 20px;
+}
+
+.skills {
+
+    &__title{
+        padding-top: 91px;
+        margin-bottom: 69px;
+    }
+    &__subtitle{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 83px;
+    }
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+
+
+    &__image{
+        height: 90px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+
+
+    &__title{
+        width: 90px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+        margin-bottom: 41px;
+    }
+    &__stars{  
+        display:flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 126px;
+        height: 206px;
+    }
+}
+
