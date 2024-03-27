@@ -1,16 +1,20 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gilroy";
-  src: local("./fonts/Gilroy Bold"), local("Gilroy-Bold"), url("./fonts/Gilroy-Bold.woff2") format("woff2"), url("./fonts/Gilroy-Bold.woff") format("woff"), url("./fonts/Gilroy-Bold.ttf") format("truetype");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/Sait/fonts/Gilroy-Bold.woff2") format("woff2"), url("/Sait/fonts/Gilroy-Bold.woff") format("woff"), url("/Sait/fonts/Gilroy-Bold.ttf") format("ttf"), url("/Sait/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("./fonts/Gilroy Medium"), local("Gilroy-Medium"), url("./fonts/Gilroy-Medium.woff2") format("woff2"), url("./fonts/Gilroy-Medium.woff") format("woff"), url("./fonts/Gilroy-Medium.ttf") format("truetype");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("/Sait/fonts/Gilroy-Medium.woff2") format("woff2"), url("/Sait/fonts/Gilroy-Medium.woff") format("woff"), url("/Sait/fonts/Gilroy-Medium.ttf") format("ttf") url("/Sait/fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+.hgjh {
+  src: url(/Sait/fonts/Gilroy-Bold.ttf);
+}
+
 /*  Файл в которм прописываются общие классы, стили, переменнные, */
 body, html {
   font-family: "Gilroy";
@@ -33,7 +37,10 @@ body, html {
 }
 
 header {
-  margin-bottom: 40px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0px;
 }
 
 .nav {
@@ -56,6 +63,10 @@ header {
   color: #070707;
 }
 
+.main {
+  display: flex;
+  padding-top: 100px;
+}
 .main__discrip {
   display: flex;
   justify-content: space-between;
