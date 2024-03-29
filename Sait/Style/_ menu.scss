@@ -1,0 +1,86 @@
+// .сontainer{
+//     position: fixed;
+//     width: 100%;
+//     background-color: white;
+//     top: 0px;
+// }
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    // background-color: aqua;
+}
+.header {
+    width: 70%;
+    height: 485px;
+
+} 
+
+.link{
+    text-decoration: none;
+    color: #828282;
+    font-weight: 700;
+}
+
+.nav {
+    &__list{
+        padding: 0;
+        margin-top: 31px;
+        margin-bottom: 35px;
+       }
+    
+    &__item{
+        display: flex;
+        align-content: center;
+        font-size: 30px;
+        font-weight: 500;
+        width: 200px; 
+        height: 100px;
+        }
+    &__item a:hover {        
+        color: #070707;
+        font-weight: 700;
+    }
+}
+
+.main{
+    &__box{
+    margin-top: 31px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 50px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    &__exit{
+        &:hover, &:active {
+        color: #070707;
+        }
+    }
+
+    &__links {
+        &:hover, &:active {
+        color: #070707;
+        }
+    }
+    &__links{                           //Переворачиваем на 180 градусов
+        writing-mode: vertical-lr; 
+        // transform: rotate(180deg);
+    }
+    &__link:first-child::after {
+        content: ' ';   //вставляем пробел и закрашиваем
+        display: inline-block;
+        width: 25px;
+        height: 4px;
+        background-color: black;
+        margin-top: 5px; //отступ слева (после первого элемента)
+    }
+
+
+}
+

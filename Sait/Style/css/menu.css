@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.header {
+  width: 70%;
+  height: 485px;
+}
+
+.link {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 700;
+}
+
+.nav__list {
+  padding: 0;
+  margin-top: 31px;
+  margin-bottom: 35px;
+}
+.nav__item {
+  display: flex;
+  align-content: center;
+  font-size: 30px;
+  font-weight: 500;
+  width: 200px;
+  height: 100px;
+}
+.nav__item a:hover {
+  color: #070707;
+  font-weight: 700;
+}
+
+.main__box {
+  margin-top: 31px;
+  font-size: 30px;
+  text-decoration: none;
+  width: 50px;
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.main__exit:hover, .main__exit:active {
+  color: #070707;
+}
+.main__links:hover, .main__links:active {
+  color: #070707;
+}
+.main__links {
+  writing-mode: vertical-lr;
+}
+.main__link:first-child::after {
+  content: " ";
+  display: inline-block;
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  margin-top: 5px;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/Sait/fonts/Gilroy-Bold.woff2") format("woff2"), url("/Sait/fonts/Gilroy-Bold.woff") format("woff"), url("/Sait/fonts/Gilroy-Bold.ttf") format("ttf"), url("/Sait/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("/Sait/fonts/Gilroy-Medium.woff2") format("woff2"), url("/Sait/fonts/Gilroy-Medium.woff") format("woff"), url("/Sait/fonts/Gilroy-Medium.ttf") format("ttf") url("/Sait/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.hgjh {
+  src: url(/Sait/fonts/Gilroy-Bold.ttf);
+}

@@ -18,10 +18,21 @@
 
 }
 
+
+
+    
 .cards {
+    @media screen and (orientation: landscape) 
+    {
     display: flex;
     justify-content: space-between;
     margin-bottom: 110px;
+    }
+    @media screen and (orientation:portrait) 
+    {display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 110px;}
 
 
     &__image{
@@ -46,12 +57,23 @@
         display:flex;
         justify-content: space-between;
     }
-    &__item{
+    &__item{    
+        @media screen and (orientation: landscape) 
+        {display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 126px;
+        height: 206px;}
+        @media screen and (orientation:portrait) 
+        {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
         width: 126px;
         height: 206px;
+        margin-bottom: 80px;
+        }
     }
+
 }
 
