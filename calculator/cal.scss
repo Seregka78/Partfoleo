@@ -1,0 +1,126 @@
+body {
+background-color: rgba(0, 0, 0, 0);
+
+}
+.title {
+    display: block;
+    top: 10px;
+    overflow: hidden; // Скрываем линии которые вылазят за ширину блока 
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+    background-color: aquamarine;
+
+&__text {
+    text-align:center;
+    font-weight: 700;
+    color:rgb(37, 1, 1);
+
+}
+}
+.box {
+overflow: hidden; // Скрываем линии которые вылазят за ширину блока 
+background-color: gray;
+height: 470px;
+width: 200px;
+margin: 0 auto;
+border-radius: 5%;
+
+&__name {
+    text-align:center;
+    color:rgb(0, 0, 0);
+    position: relative;
+    margin: 20px 0 0;
+
+
+}
+&__name::before,
+&__name::after
+{
+    content: '';	
+	display: inline-block;	
+	vertical-align: middle; 
+	box-sizing: border-box;
+	width: 100%; /* Устанавливаем ширину в 100%, что делает линию равной ширине тега заголовка */
+	height: 1px; /* Высота линий */
+    background: #000000; /* Цвет линий */
+	border: solid gray; /* Добавляем к линиям границу с цветом основного фона заголовка, для отступа от текста */
+	border-width: 0 5px; /* Отступ от текста */
+
+}
+&__name:before {             //сдвигаем полоску влево
+	margin-left: -100%;
+}
+&__name:after {             //сдвигаем полоску вправо
+	margin-right: -100%;
+}
+
+&__input{
+    display: flex;
+    justify-content: center;
+    align-content:space-between;
+    flex-wrap: wrap;
+    height: 110px;
+
+}
+
+&__output{
+    margin: 20px 0 0;
+    height: 100px;
+
+&__result{
+    background-color: white;
+    width: 80%;
+    height: 80px;
+    margin: 20px auto;
+    border-radius: 0 0 5% 5%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 70%;
+
+
+}    
+}
+}
+
+.all_button{
+    display: flex;
+    justify-content: space-around;
+    align-content:center;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+
+
+&__but{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: large;    
+}
+&__but:hover{
+    background-color: gray;
+}
+&__but:active{
+    background-color: red;
+}
+&__cal{
+    width: 80%;
+    font-size: 14px;
+    align-self:center;
+    height: 40px;
+}
+&__cal:hover{
+    background-color: gray;
+}
+&__cal:active{
+    background-color: red;
+
+}}
+.box__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+}    

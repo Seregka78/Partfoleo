@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/cal.css">
+    
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            <p class="title__text">Calculator</p>
+        </div>
+        <div class="box__input">
+            <p class="box__name">Входные данные</p>
+            <div class="box__input1"> 
+                <input type="number" id="input1" placeholder="Введите число" value="15">      <!-- <placeholder подсказка для пользователя <value="15" цифра по умочанию-->  
+            </div>
+            <div class="box__input2"> 
+                <input type="number" id="input2" placeholder="Введите число" value="15">
+            </div>
+        </div>
+        <div class="box__button">
+            <p class="box__name">Операция</p>
+            <div class="all_button">
+                <button id="plus" class="all_button__but"> + </button>
+                <button id="minus" class="all_button__but"> - </button>
+                <button id="umnozh" class="all_button__but"> * </button>
+                <button id="razd" class="all_button__but"> / </button>
+            </div>    
+            <button id="cal" class="all_button__cal"> Calculate </button>
+
+        </div>
+        <div class="box__output">
+            <p class="box__name">Вычисление</p>
+            <p id="output" class="box__output__result">45</p>
+        </div>
+    </div>
+<script src="./cal.js"></script>
+</body>
+</html>

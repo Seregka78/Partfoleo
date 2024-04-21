@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.title {
+  display: block;
+  top: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+  background-color: aquamarine;
+}
+.title__text {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(37, 1, 1);
+}
+
+.box {
+  overflow: hidden;
+  background-color: gray;
+  height: 470px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+.box__name {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+  margin: 20px 0 0;
+}
+.box__name::before, .box__name::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%; /* Устанавливаем ширину в 100%, что делает линию равной ширине тега заголовка */
+  height: 1px; /* Высота линий */
+  background: #000000; /* Цвет линий */
+  border: solid gray; /* Добавляем к линиям границу с цветом основного фона заголовка, для отступа от текста */
+  border-width: 0 5px; /* Отступ от текста */
+}
+.box__name:before {
+  margin-left: -100%;
+}
+.box__name:after {
+  margin-right: -100%;
+}
+.box__input {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 110px;
+}
+.box__output {
+  margin: 20px 0 0;
+  height: 100px;
+}
+.box__output__result {
+  background-color: white;
+  width: 80%;
+  height: 80px;
+  margin: 20px auto;
+  border-radius: 0 0 5% 5%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all_button {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+}
+.all_button__but {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: large;
+}
+.all_button__but:hover {
+  background-color: gray;
+}
+.all_button__but:active {
+  background-color: red;
+}
+.all_button__cal {
+  width: 80%;
+  font-size: 14px;
+  align-self: center;
+  height: 40px;
+}
+.all_button__cal:hover {
+  background-color: gray;
+}
+.all_button__cal:active {
+  background-color: red;
+}
+
+.box__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
